@@ -1,0 +1,89 @@
+<template name="hueyView">
+  <header>
+  <div class="container">
+      <div class="left">
+
+        <ul>
+          <li>
+            <div><a href="/">Home</a></div>
+          </li>
+          <li>
+            <div><a href="https://github.com/weberl48/spotify-api-visualizer">Github</a></div>
+          </li>
+          <li>
+            <div><a href="mailto:weberl48@outlook.com">Contact</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="right">
+        <div id="show-links" style="display: inline-block"><a id="show-login" href="#">Login </a><br/><a id="show-signup" href="#">Sign Up!</a>
+        </div>
+        <div id="hidden-login" style="display: none">
+          <form action="/visualize/login" method="POST">
+            <label>User Name</label>
+            <input type="text" name="userName"/>
+            <label>Password</label>
+            <input type="password" name="password"/>
+            <input type="submit" value="Login"/><a id="login-cancel" href="#" class="cancel">Cancel</a>
+          </form>
+        </div>
+        <div id="hidden-signup" style="display: none">
+          <form action="/visualize/sign-up" method="POST">
+            <label for="user">User Name</label>
+            <input id="user" type="text" name="userName" autofocus="autofocus"/>
+            <label for="pass">Password</label>
+            <input id="pass" type="password" name="password"/>
+            <label for="pass-confirm">Confirm Password</label>
+            <input id="pass-confirm" type="password" name="passwordConfirm"/>
+            <input type="submit" value="Sign Up"/><a id="signup-cancel" href="#" class="cancel">Cancel</a>
+          </form>
+        </div>
+      </div> -->
+    </div>
+    </header>
+    <div class="handle">
+      <div class="centered">
+      <h1>Beats By Huey</h1>
+    <img class="avatar" src="/images/avatar.jpeg"/>
+  </div>
+  </div>
+    <!-- <div class="main">
+      <div class="search">
+        <input id="search" type="text" placeholder="Search for Artist"/><br/>
+        <input id="search-button" type="button" value="Search"/>
+      </div>
+    </div> -->
+    <div id="jump-to-anchor"> </div>
+    <div id="artist-info">
+      <h1 id="song-name">Artist - Album</h1>&nbsp;&nbsp;&nbsp;&nbsp;<img id="pause" src="images/pause.png"/><img id="play" src="images/play-button.png"/>
+    </div>
+    <div class="render">
+      <canvas id="analyser_render" height="200" width="1250"></canvas>
+    </div>
+    <div id="album-art">
+      <!-- <div class="color-mode">
+        <table>
+          <thead>
+            <th colspan="2">VISUALIZER EFFECTS</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hulk Mode</td>
+              <td> <img id="normal" src="images/equalizer-selected.png"/></td>
+            </tr>
+            <tr>
+              <td>Stealth Mode</td>
+              <td> <img id="stealth" src="images/incognito.png"/></td>
+            </tr>
+            <tr>
+              <td>Crazebow Mode</td>
+              <td> <img id="crazebow" src="images/rainbow.png"/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+      <div class="results"></div>
+    </div>
+    <audio id="player" loop="loop" src="sample.mp3" type="audio/mp3"></audio>
+</template>
